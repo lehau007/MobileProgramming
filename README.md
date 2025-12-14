@@ -13,10 +13,12 @@ An Android app for managing daily tasks with a clean interface and smooth user e
 - 💾 Local data persistence
 - 🎨 Intuitive Material Design UI
 
+---
+
 ## 🎭 Building Journey - The Fun Parts
 
 ### *** This is how Android Studio works. Hehe ***
-image-url
+![Android Studio](androidStudio.png)
 
 <!-- Add your funny images below -->
 <!-- Example: -->
