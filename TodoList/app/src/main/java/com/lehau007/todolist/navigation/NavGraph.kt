@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.lehau007.todolist.ui.screens.AddEditTaskScreen
+import com.lehau007.todolist.ui.screens.CategoryManagementScreen
 import com.lehau007.todolist.ui.screens.FocusModeScreen
 import com.lehau007.todolist.ui.screens.MainScreen
 
@@ -22,6 +23,7 @@ sealed class Screen(val route: String) {
     data object FocusMode : Screen("focus_mode/{taskId}") {
         fun createRoute(taskId: String) = "focus_mode/$taskId"
     }
+    data object CategoryManagement : Screen("category_management")
 }
 
 /**
@@ -86,6 +88,15 @@ fun TodoNavGraph(
             val taskId = backStackEntry.arguments?.getString("taskId") ?: ""
             FocusModeScreen(
                 taskId = taskId,
+                onNavigateBack = {
+                    navController.popBackStack()
+                }
+            )
+        }
+        
+        // Category Management Screen
+        composable(Screen.CategoryManagement.route) {
+            CategoryManagementScreen(
                 onNavigateBack = {
                     navController.popBackStack()
                 }

@@ -70,9 +70,22 @@
     <!-- Categories -->
     <string name="categories">Categories</string>
     <string name="add_category">Add Category</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="manage_categories">Manage Categories</string>
     <string name="category_name">Category Name</string>
+    <string name="category_name_hint">e.g., Work, Personal, Study</string>
+    <string name="category_color">Color</string>
     <string name="select_color">Select Color</string>
     <string name="select_icon">Select Icon</string>
+    <string name="delete_category">Delete Category</string>
+    <string name="delete_category_confirmation">Are you sure you want to delete "%1$s"? Tasks in this category will become uncategorized.</string>
+    <string name="cannot_delete_default_category">Default categories cannot be deleted</string>
+    <string name="default_category">Default</string>
+    <string name="task_count">%1$d tasks</string>
+    <string name="no_categories">No Categories</string>
+    <string name="no_categories_hint">Create categories to organize your tasks</string>
+    <string name="add_first_category">Add First Category</string>
+    <string name="add">Add</string>
     <string name="uncategorized">Uncategorized</string>
     <string name="category_work">Work</string>
     <string name="category_personal">Personal</string>
