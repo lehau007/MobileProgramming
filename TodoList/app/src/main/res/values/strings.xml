@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">TodoList</string>
+    
+    <!-- Common -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="start">Start</string>
+    <string name="minutes">minutes</string>
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    
+    <!-- Navigation -->
+    <string name="nav_menu">Menu</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_mine">Mine</string>
+    
+    <!-- Task List -->
+    <string name="tasks">Tasks</string>
+    <string name="add_task">Add Task</string>
+    <string name="no_tasks">No tasks yet</string>
+    <string name="no_tasks_subtitle">Tap + to add your first task</string>
+    <string name="filter_all">All</string>
+    <string name="filter_pending">Pending</string>
+    <string name="filter_completed">Completed</string>
+    <string name="section_previous">Previous</string>
+    <string name="section_today">Today</string>
+    <string name="section_future">Future</string>
+    <string name="section_completed_today">Completed Today</string>
+    <string name="sort_by_date">Sort by Date</string>
+    <string name="sort_by_priority">Sort by Priority</string>
+    <string name="delete_task_confirm">Delete this task?</string>
+    <string name="delete_task_message">This action cannot be undone.</string>
+    <string name="mark_complete">Mark as complete</string>
+    <string name="mark_incomplete">Mark as incomplete</string>
+    
+    <!-- Add/Edit Task -->
+    <string name="add_new_task">Add New Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="task_title">Title</string>
+    <string name="task_title_hint">Enter task title</string>
+    <string name="task_description">Description</string>
+    <string name="task_description_hint">Enter task description (optional)</string>
+    <string name="category">Category</string>
+    <string name="category_none">None</string>
+    <string name="priority_icon">Priority Icon</string>
+    <string name="set_time">Enable Time</string>
+    <string name="set_time_hint">Enable to receive notification</string>
+    <string name="due_date">Due Date</string>
+    <string name="due_time">Due Time</string>
+    <string name="time_optional">Time (optional)</string>
+    <string name="no_time_set">No time set</string>
+    <string name="priority">Priority</string>
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminder_5_min">5 minutes before</string>
+    <string name="reminder_30_min">30 minutes before</string>
+    <string name="reminder_1_hour">1 hour before</string>
+    <string name="reminder_1_day">1 day before</string>
+    <string name="task_saved">Task saved successfully</string>
+    <string name="task_deleted">Task deleted</string>
+    <string name="error_empty_title">Title cannot be empty</string>
+    
+    <!-- Categories -->
+    <string name="categories">Categories</string>
+    <string name="add_category">Add Category</string>
+    <string name="category_name">Category Name</string>
+    <string name="select_color">Select Color</string>
+    <string name="select_icon">Select Icon</string>
+    <string name="uncategorized">Uncategorized</string>
+    <string name="category_work">Work</string>
+    <string name="category_personal">Personal</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_health">Health</string>
+    
+    <!-- Profile/Analytics -->
+    <string name="profile_greeting">Your Progress</string>
+    <string name="profile_subtitle">Keep up the great work!</string>
+    <string name="tasks_overview">Tasks Overview</string>
+    <string name="completed_tasks">Completed Tasks</string>
+    <string name="pending_tasks">Pending Tasks</string>
+    <string name="completion_chart">Completion of Daily Tasks</string>
+    <string name="tasks_next_7_days">Tasks in Next 7 Days</string>
+    <string name="no_upcoming_tasks">No upcoming tasks</string>
+    
+    <!-- Links -->
+    <string name="follow_me_github">Follow me on GitHub</string>
+    
+    <!-- Focus Mode -->
+    <string name="focus_mode">Focus Mode</string>
+    <string name="set_focus_duration">Set Focus Duration</string>
+    <string name="set_target_time">Set target time</string>
+    <string name="change_target_time">Change target time</string>
+    <string name="focus_completed">Focus session completed!</string>
+    <string name="total_focus_time">Total focus time</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_name">Task Reminders</string>
+    <string name="notification_channel_description">Notifications for upcoming tasks</string>
+    <string name="notification_task_due">Task due soon</string>
+    <string name="notification_action_complete">Mark Complete</string>
+    <string name="notification_action_open">Open Task</string>
+</resources>

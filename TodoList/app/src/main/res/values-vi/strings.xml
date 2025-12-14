@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Công việc</string>
+    
+    <!-- Common -->
+    <string name="save">Lưu</string>
+    <string name="cancel">Hủy</string>
+    <string name="delete">Xóa</string>
+    <string name="ok">OK</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="start">Bắt đầu</string>
+    <string name="minutes">phút</string>
+    <string name="settings">Cài đặt</string>
+    <string name="language">Ngôn ngữ</string>
+    
+    <!-- Navigation -->
+    <string name="nav_menu">Menu</string>
+    <string name="nav_tasks">Công việc</string>
+    <string name="nav_calendar">Lịch</string>
+    <string name="nav_mine">Của tôi</string>
+    
+    <!-- Task List -->
+    <string name="tasks">Công việc</string>
+    <string name="add_task">Thêm công việc</string>
+    <string name="no_tasks">Chưa có công việc nào</string>
+    <string name="no_tasks_subtitle">Nhấn + để thêm công việc đầu tiên</string>
+    <string name="filter_all">Tất cả</string>
+    <string name="filter_pending">Chờ làm</string>
+    <string name="filter_completed">Hoàn thành</string>
+    <string name="section_previous">Trước đó</string>
+    <string name="section_today">Hôm nay</string>
+    <string name="section_future">Sắp tới</string>
+    <string name="section_completed_today">Hoàn thành hôm nay</string>
+    <string name="sort_by_date">Sắp xếp theo ngày</string>
+    <string name="sort_by_priority">Sắp xếp theo ưu tiên</string>
+    <string name="delete_task_confirm">Xóa công việc này?</string>
+    <string name="delete_task_message">Hành động này không thể hoàn tác.</string>
+    <string name="mark_complete">Đánh dấu hoàn thành</string>
+    <string name="mark_incomplete">Đánh dấu chưa hoàn thành</string>
+    
+    <!-- Add/Edit Task -->
+    <string name="add_new_task">Thêm công việc mới</string>
+    <string name="edit_task">Chỉnh sửa công việc</string>
+    <string name="task_title">Tiêu đề</string>
+    <string name="task_title_hint">Nhập tiêu đề công việc</string>
+    <string name="task_description">Mô tả</string>
+    <string name="task_description_hint">Nhập mô tả (không bắt buộc)</string>
+    <string name="due_date">Ngày hết hạn</string>
+    <string name="due_time">Thời gian</string>
+    <string name="time_optional">Thời gian (không bắt buộc)</string>
+    <string name="no_time_set">Chưa đặt thời gian</string>
+    <string name="priority">Độ ưu tiên</string>
+    <string name="priority_low">Thấp</string>
+    <string name="priority_medium">Trung bình</string>
+    <string name="priority_high">Cao</string>
+    <string name="priority_icon">Biểu tượng ưu tiên</string>
+    <string name="reminder">Nhắc nhở</string>
+    <string name="reminder_5_min">Trước 5 phút</string>
+    <string name="reminder_30_min">Trước 30 phút</string>
+    <string name="reminder_1_hour">Trước 1 giờ</string>
+    <string name="reminder_1_day">Trước 1 ngày</string>
+    <string name="task_saved">Đã lưu công việc</string>
+    <string name="task_deleted">Đã xóa công việc</string>
+    <string name="error_empty_title">Tiêu đề không được để trống</string>
+    
+    <!-- Categories -->
+    <string name="categories">Danh mục</string>
+    <string name="add_category">Thêm danh mục</string>
+    <string name="category">Danh mục</string>
+    <string name="category_name">Tên danh mục</string>
+    <string name="select_color">Chọn màu</string>
+    <string name="select_icon">Chọn biểu tượng</string>
+    <string name="uncategorized">Chưa phân loại</string>
+    <string name="category_work">Công việc</string>
+    <string name="category_personal">Cá nhân</string>
+    <string name="category_shopping">Mua sắm</string>
+    <string name="category_health">Sức khỏe</string>
+    
+    <!-- Profile/Analytics -->
+    <string name="profile_greeting">Tiến độ của bạn</string>
+    <string name="profile_subtitle">Tiếp tục cố gắng nhé!</string>
+    <string name="tasks_overview">Tổng quan công việc</string>
+    <string name="completed_tasks">Đã hoàn thành</string>
+    <string name="pending_tasks">Đang chờ</string>
+    <string name="completion_chart">Hoàn thành hàng ngày</string>
+    <string name="tasks_next_7_days">Công việc 7 ngày tới</string>
+    <string name="no_upcoming_tasks">Không có công việc sắp tới</string>
+    
+    <!-- Links -->
+    <string name="follow_me_github">Theo dõi tôi trên GitHub</string>
+    
+    <!-- Focus Mode -->
+    <string name="focus_mode">Chế độ tập trung</string>
+    <string name="set_focus_duration">Đặt thời gian tập trung</string>
+    <string name="set_target_time">Đặt thời gian mục tiêu</string>
+    <string name="change_target_time">Thay đổi thời gian mục tiêu</string>
+    <string name="focus_completed">Hoàn thành phiên tập trung!</string>
+    <string name="total_focus_time">Tổng thời gian tập trung</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_name">Nhắc nhở công việc</string>
+    <string name="notification_channel_description">Thông báo cho các công việc sắp đến hạn</string>
+    <string name="notification_task_due">Công việc sắp đến hạn</string>
+    <string name="notification_action_complete">Đánh dấu hoàn thành</string>
+    <string name="notification_action_open">Mở công việc</string>
+</resources>

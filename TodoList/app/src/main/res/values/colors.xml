@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ocean Blue Theme Colors -->
+    <color name="primary_blue">#FF2563EB</color>
+    <color name="primary_blue_light">#FF60A5FA</color>
+    <color name="secondary_cyan">#FF0EA5E9</color>
+    <color name="tertiary_cyan">#FF06B6D4</color>
+    
+    <!-- Icon colors -->
+    <color name="ic_launcher_background">#FF2563EB</color>
+    
+    <!-- Legacy colors (keeping for compatibility) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
