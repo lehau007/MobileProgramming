@@ -46,7 +46,7 @@ fun MainScreen(
                     },
                     onCreateCategoryClick = {
                         scope.launch { drawerState.close() }
-                        // Navigate to create category
+                        navController.navigate("category_management")
                     },
                     onLanguageChange = { language ->
                         viewModel.setLanguage(language)
