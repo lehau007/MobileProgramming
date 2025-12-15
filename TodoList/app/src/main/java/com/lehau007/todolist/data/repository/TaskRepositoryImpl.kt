@@ -77,11 +77,47 @@ class TaskRepositoryImpl @Inject constructor(
     override suspend fun toggleTaskCompletion(taskId: String) {
         val task = taskDao.getTaskByIdOnce(taskId)
         if (task != null) {
-            taskDao.updateTaskCompletionStatus(
-                taskId = taskId,
-                isCompleted = !task.isCompleted,
-                updatedAt = System.currentTimeMillis()
-            )
+            // Handle recurring tasks specially when marking as complete
+            if (task.isRecurring && !task.isCompleted && task.recurrencePeriod != "NONE") {
+                // Calculate the next occurrence date
+                val calendar = Calendar.getInstance()
+                calendar.timeInMillis = task.dueDateTime
+                
+                when (task.recurrencePeriod) {
+                    "DAILY" -> calendar.add(Calendar.DAY_OF_YEAR, 1)
+                    "WEEKLY" -> calendar.add(Calendar.WEEK_OF_YEAR, 1)
+                    "MONTHLY" -> calendar.add(Calendar.MONTH, 1)
+                }
+                
+                val nextDueDateTime = calendar.timeInMillis
+                
+                // Check if next occurrence is within the recurrence end date (if set)
+                val shouldContinueRecurrence = task.recurrenceEndDate == null || 
+                    nextDueDateTime <= task.recurrenceEndDate
+                
+                if (shouldContinueRecurrence) {
+                    // Move to next occurrence instead of marking as complete
+                    taskDao.updateTaskDueDateTime(
+                        taskId = taskId,
+                        dueDateTime = nextDueDateTime,
+                        updatedAt = System.currentTimeMillis()
+                    )
+                } else {
+                    // Past the end date, mark as completed
+                    taskDao.updateTaskCompletionStatus(
+                        taskId = taskId,
+                        isCompleted = true,
+                        updatedAt = System.currentTimeMillis()
+                    )
+                }
+            } else {
+                // Non-recurring task or unchecking a completed task
+                taskDao.updateTaskCompletionStatus(
+                    taskId = taskId,
+                    isCompleted = !task.isCompleted,
+                    updatedAt = System.currentTimeMillis()
+                )
+            }
         }
     }
     

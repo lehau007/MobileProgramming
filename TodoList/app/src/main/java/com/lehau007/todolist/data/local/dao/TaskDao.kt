@@ -100,6 +100,12 @@ interface TaskDao {
     suspend fun updateTaskCompletionStatus(taskId: String, isCompleted: Boolean, updatedAt: Long)
     
     /**
+     * Update task due date (used for recurring tasks).
+     */
+    @Query("UPDATE tasks SET dueDateTime = :dueDateTime, updatedAt = :updatedAt WHERE id = :taskId")
+    suspend fun updateTaskDueDateTime(taskId: String, dueDateTime: Long, updatedAt: Long)
+    
+    /**
      * Get tasks for a specific date range (start of day to end of day).
      */
     @Query("SELECT * FROM tasks WHERE dueDateTime >= :startOfDay AND dueDateTime < :endOfDay ORDER BY dueDateTime ASC")
